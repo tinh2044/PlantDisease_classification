@@ -1,7 +1,7 @@
 {
   "AppleDisease": {
     "alternaria_leaf_spot": {
-      "name": "Bệnh đốm lá xen kẽ",
+      "name": "Bệnh đốm lá xen kẽ trên Táo",
       "info": {
         "description": "Đây là một bệnh do nấm Alternaria gây ra. Nó thường xuất hiện dưới dạng các đốm nhỏ màu nâu hoặc đen trên lá, có thể mở rộng và hợp lại tạo thành các vết đốm lớn hơn với viền màu vàng.",
         "agent": "Nấm Alternaria",
@@ -9,7 +9,7 @@
       }
     },
     "brown_spot": {
-      "name": "Bệnh đốm nâu",
+      "name": "Bệnh đốm nâu trên Táo",
       "info": {
         "description": "Bệnh này thường do nấm hoặc vi khuẩn gây ra. Các đốm nâu xuất hiện trên lá, thân, hoặc quả cây táo.",
         "agent": "Nấm hoặc vi khuẩn",
@@ -17,7 +17,7 @@
       }
     },
     "gray_spot": {
-      "name": "Bệnh đốm xám",
+      "name": "Bệnh đốm xám trên Táo",
       "info": {
         "description": "Đây là một bệnh do nấm Botryosphaeria gây ra. Các vết đốm thường có màu xám hoặc bạc, xuất hiện trên lá, cành và quả.",
         "agent": "Nấm Botryosphaeria",
@@ -25,13 +25,13 @@
       }
     },
     "healthy_leaf": {
-      "name": "Lá khỏe mạnh",
+      "name": "Lá khỏe mạnh trên Táo",
       "info": {
         "description": "Một lá khỏe mạnh của cây táo sẽ có màu xanh đều, không có các vết đốm hoặc dấu hiệu của bệnh tật."
       }
     },
     "rust": {
-      "name": " Bệnh Rust (Gỉ sắt)",
+      "name": " Bệnh Rust (Gỉ sắt) trên Táo",
       "info": {
         "description": "Đây là một bệnh do nấm gây ra, thường là Gymnosporangium juniperi-virginianae. Bệnh gỉ sắt xuất hiện dưới dạng các đốm màu vàng cam hoặc đỏ trên lá, thân, hoặc quả.",
         "agent": "Nấm Gymnosporangium juniperi-virginianae",
@@ -41,7 +41,7 @@
   },
   "BellPepperDisease": {
     "bacterial_spot": {
-      "name": " Bệnh đốm vi khuẩn",
+      "name": " Bệnh đốm vi khuẩn trên Ớt chuông",
       "info": {
         "description": "Bệnh đốm vi khuẩn trên cây ớt chuông do vi khuẩn thuộc chi Xanthomonas gây ra. Đây là một trong những bệnh phổ biến và nghiêm trọng trên cây ớt chuông.",
         "agent": "Vi khuẩn Xanthomonas",
@@ -63,7 +63,7 @@
       }
     },
     "powdery_mildew": {
-      "name": "Bệnh phấn trắng",
+      "name": "Bệnh phấn trắng trên Chery",
       "info": {
         "description": "Bệnh phấn trắng trên cây cherry do nhiều loại nấm thuộc nhóm Erysiphales gây ra. Đây là một trong những bệnh phổ biến trên nhiều loại cây, bao gồm cả cherry.",
         "agent": "Nấm nhóm Erysiphales",
@@ -73,7 +73,7 @@
   },
   "CornDisease": {
     "common_rust": {
-      "name": "Bệnh Rust (Gỉ sắt)",
+      "name": "Bệnh Rust (Gỉ sắt) trên Ngô",
       "info": {
         "description": "Đây là một bệnh phổ biến trên cây ngô, do nấm Puccinia sorghi gây ra. Các vết bệnh thường xuất hiện dưới dạng các đốm màu nâu đỏ trên lá, thân và cả nhánh hoa.",
         "agent": "Nấm Puccinia sorghi",
@@ -81,7 +81,7 @@
       }
     },
     "gray_leaf_spot": {
-      "name": "Bệnh Đốm lá xám",
+      "name": "Bệnh Đốm lá xám trên Ngô",
       "info": {
         "description": "Đây là một bệnh do nấm Cercospora zea-maydis gây ra. Các vết bệnh thường xuất hiện dưới dạng các đốm màu xám trên lá của cây ngô.",
         "agent": "Nấm Cercospora zea-maydis",
@@ -95,7 +95,7 @@
       }
     },
     "northern_leaf_blight": {
-      "name": "Bệnh đốm lá lớn",
+      "name": "Bệnh đốm lá lớn trên Ngô",
       "info": {
         "description": "Đây là một bệnh do nấm Exserohilum turcicum gây ra. Các vết bệnh thường xuất hiện dưới dạng các đốm màu nâu đen trên lá của cây ngô.",
         "agent": "Nấm Exserohilum turcicum",
@@ -105,7 +105,7 @@
   },
   "GrapeDisease": {
     "black_rot": {
-      "name": "Bệnh Thối đen",
+      "name": "Bệnh Thối đen trên Nho",
       "info": {
         "description": "Đây là một trong những bệnh phổ biến và nguy hiểm trên nho, do nấm Guignardia bidwellii gây ra. Bệnh thường lan rộng nhanh chóng trong điều kiện ẩm ướt.",
         "agent": "Nấm Guignardia bidwellii",
@@ -113,7 +113,7 @@
       }
     },
     "blight": {
-      "name": "Bệnh Chết sớm",
+      "name": "Bệnh Chết sớm trên Nho",
       "info": {
         "description": "Bệnh chết sớm trên nho thường do nấm Elsinoë ampelina hoặc Botrytis cinerea gây ra. Bệnh thường phát triển mạnh mẽ trong điều kiện ẩm ướt và lạnh.",
         "agent": "Nấm Elsinoë ampelina hoặc Botrytis cinerea",
@@ -121,7 +121,7 @@
       }
     },
     "esca": {
-      "name": "Bệnh esca",
+      "name": "Bệnh esca trên Nho",
       "info": {
         "description": "Bệnh esca trên nho thường do các loài nấm nhóm Phaeoacremonium, Phaeomoniella và Fomitiporia gây ra. Đây là một bệnh phức tạp và khó điều trị.",
         "agent": "Nấm nhóm Phaeoacremonium, Phaeomoniella và Fomitiporia",
@@ -137,7 +137,7 @@
   },
   "JackDisease": {
     "algal_spot": {
-      "name": "Bệnh Đốm tảo",
+      "name": "Bệnh Đốm tảo trên Mít",
       "info": {
         "description": "Đây là một bệnh thường gặp trên cây jackfruit, do các loài tảo gây ra. Bệnh thường xuất hiện dưới dạng các vết đốm màu nâu hoặc đen trên lá cây.",
         "agent": "Tảo",
@@ -145,7 +145,7 @@
       }
     },
     "black_spot": {
-      "name": "Bệnh Đốm đen",
+      "name": "Bệnh Đốm đen trên Mít",
       "info": {
         "description": "Đây là một bệnh do nấm gây ra, thường xuất hiện dưới dạng các vết đốm màu đen trên lá của cây jackfruit.",
         "agent": "Nấm",
@@ -161,7 +161,7 @@
   },
   "PeachDisease": {
     "bacterial_spot": {
-      "name": "Bệnh Đốm vi khuẩn",
+      "name": "Bệnh Đốm vi khuẩn trên Lê",
       "info": {
         "description": "Đây là một trong những bệnh phổ biến trên đào, do vi khuẩn Xanthomonas campestris pv. pruni gây ra. Bệnh thường phát triển trong điều kiện ẩm ướt.",
         "agent": "Vi khuẩn Xanthomonas campestris pv. pruni",
@@ -177,7 +177,7 @@
   },
   "PotatoDisease": {
     "early_blight": {
-      "name": "Bệnh đốm sớm",
+      "name": "Bệnh bạc lá sớm trên Lê",
       "info": {
         "description": "Đây là một bệnh phổ biến trên khoai tây, do nấm Alternaria solani gây ra. Bệnh thường phát triển trong điều kiện ẩm ướt và nhiệt độ mát mẻ.",
         "agent": "Nấm Alternaria solani",
@@ -191,7 +191,7 @@
       }
     },
     "late_blight": {
-      "name": "Bệnh đốm muộn",
+      "name": "Bệnh sương mai trên Lê",
       "info": {
         "description": "Đây là một bệnh phổ biến trên khoai tây, do nấm Phytophthora infestans gây ra. Bệnh thường phát triển trong điều kiện ẩm ướt và nhiệt độ mát mẻ.",
         "agent": "Nấm Phytophthora infestans",
@@ -207,7 +207,7 @@
       }
     },
     "leaf_scorch": {
-      "name": "Lá bị cháy nắng",
+      "name": "Bệnh cháy lá trên Dâu",
       "info": {
         "description": "Đây là một bệnh phổ biến trên dâu tây, do điều kiện nắng nóng kéo dài gây ra.",
         "agent": "Điều kiện thời tiết nắng nóng",
@@ -217,7 +217,7 @@
   },
   "TomatoDisease": {
     "bacterial_spot": {
-      "name": "Bệnh Đốm vi khuẩn",
+      "name": "Bệnh Đốm vi khuẩn trên Cà chua" ,
       "info": {
         "description": "Đây là một trong những bệnh phổ biến trên cây cà chua, do vi khuẩn Xanthomonas campestris pv. vesicatoria gây ra. Bệnh thường phát triển trong điều kiện ẩm ướt.",
         "agent": "Vi khuẩn Xanthomonas campestris pv. vesicatoria",
@@ -225,7 +225,7 @@
       }
     },
     "curl_virus": {
-      "name": "Bệnh Vi rút cuộn lá",
+      "name": "Bệnh Vi rút cuộn lá  trên Cà chua",
       "info": {
         "description": "Đây là một bệnh do vi rút gây ra, thường được truyền bởi côn trùng như bọ xít.",
         "agent": "Begomovirus, Tomato Mosaic",
@@ -233,7 +233,7 @@
       }
     },
     "early_blight": {
-      "name": "Bệnh đốm sớm",
+      "name": "Bệnh đốm sớm  trên Cà chua",
       "info": {
         "description": "Đây là một bệnh phổ biến trên cây cà chua, do nấm Alternaria solani gây ra. Bệnh thường phát triển trong điều kiện ẩm ướt và nhiệt độ mát mẻ.",
         "agent": "Nấm Alternaria solani",
@@ -247,7 +247,7 @@
       }
     },
     "late_blight": {
-      "name": "Bệnh đốm muộn",
+      "name": "Bệnh đốm muộn  trên Cà chua",
       "info": {
         "description": "Đây là một bệnh phổ biến trên cây cà chua, do nấm Phytophthora infestans gây ra. Bệnh thường phát triển trong điều kiện ẩm ướt và nhiệt độ mát mẻ.",
         "agent": "Nấm Phytophthora infestans",
@@ -255,7 +255,7 @@
       }
     },
     "leaf_mold": {
-      "name": "Nấm phủ lá",
+      "name": "Nấm phủ lá  trên Cà chua",
       "info": {
         "description": "Đây là một bệnh do nấm gây ra, thường xuất hiện dưới dạng các lớp phủ màu nâu hoặc xám trên lá của cây cà chua.",
         "agent": "Nấm",
@@ -263,7 +263,7 @@
       }
     },
     "mosaic_virus": {
-      "name": "Vi rút lai",
+      "name": "Vi rút lai  trên Cà chua",
       "info": {
         "description": "Đây là một bệnh do vi rút gây ra, thường được truyền bởi côn trùng như bọ xít.",
         "agent": "Vi rút",
@@ -271,7 +271,7 @@
       }
     },
     "septoria_leaf_spot": {
-      "name": "Bệnh Đốm lá",
+      "name": "Bệnh Đốm lá trên Cà chua",
       "info": {
         "description": "Đây là một bệnh phổ biến trên cây cà chua, do nấm Septoria lycopersici gây ra. Bệnh thường phát triển trong điều kiện ẩm ướt.",
         "agent": "Nấm Septoria lycopersici",
@@ -279,7 +279,7 @@
       }
     },
     "spot": {
-      "name": "Bệnh Đốm",
+      "name": "Bệnh Đốm  trên Cà chua",
       "info": {
         "description": "Đây là một bệnh do nấm gây ra, thường xuất hiện dưới dạng các vết đốm màu nâu hoặc đen trên lá của cây cà chua.",
         "agent": "Nấm",
@@ -289,7 +289,7 @@
   },
   "RiceDisease": {
     "bacterial_leaf_blight": {
-      "name": "Bệnh cháy bìa lá",
+      "name": "Bệnh cháy bìa lá trên Lúa",
       "info": {
         "description": "Miêu tả: Bệnh cháy bìa lá là một trong những bệnh phổ biến và gây hại nghiêm trọng cho lúa, thường xảy ra trong điều kiện thời tiết ẩm ướt.",
         "agent": "Tác nhân: Do vi khuẩn Xanthomonas oryzae pv. oryzae gây ra.",
@@ -297,7 +297,7 @@
       }
     },
     "blast": {
-      "name": "Bệnh đạo ôn",
+      "name": "Bệnh đạo ôn  trên Lúa",
       "info": {
         "description": "Miêu tả: Bệnh đạo ôn là một bệnh do nấm gây ra, ảnh hưởng nghiêm trọng đến năng suất lúa.",
         "agent": "Tác nhân: Do nấm Magnaporthe oryzae gây ra.",
@@ -305,7 +305,7 @@
       }
     },
     "blight": {
-      "name": "Bệnh bạc lá",
+      "name": "Bệnh bạc lá  trên Lúa",
       "info": {
         "description": "Miêu tả: Bệnh bạc lá gây ra hiện tượng lá lúa bị khô héo và bạc màu.",
         "agent": "Tác nhân: Do vi khuẩn Xanthomonas oryzae pv. oryzicola gây ra.",
@@ -313,7 +313,7 @@
       }
     },
     "brown_spot": {
-      "name": "Bệnh đốm nâu",
+      "name": "Bệnh đốm nâu  trên Lúa" ,
       "info": {
         "description": "Miêu tả: Bệnh đốm nâu xuất hiện dưới dạng các đốm nhỏ màu nâu trên lá lúa.",
         "agent": "Tác nhân: Do nấm Bipolaris oryzae gây ra.",
@@ -321,13 +321,13 @@
       }
     },
     "healthy": {
-      "name": "Lúa khỏe mạnh",
+      "name": "Lúa khỏe mạnh ",
       "info": {
         "description": "Miêu tả: Cây lúa khỏe mạnh có lá màu xanh tươi, không có đốm hay dấu hiệu của bệnh tật. Cây phát triển mạnh mẽ và cho năng suất cao."
       }
     },
     "narrow_brown_spot": {
-      "name": "Bệnh đốm nâu hẹp",
+      "name": "Bệnh đốm nâu hẹp trên Lúa",
       "info": {
         "description": "Miêu tả: Bệnh đốm nâu hẹp là một bệnh do nấm gây ra, ảnh hưởng đến lá lúa.",
         "agent": "Tác nhân: Do nấm Cercospora oryzae gây ra.",
@@ -335,7 +335,7 @@
       }
     },
     "scald": {
-      "name": "Bệnh khô vằn",
+      "name": "Bệnh khô vằn  trên Lúa",
       "info": {
         "description": "Miêu tả: Bệnh khô vằn là một bệnh phổ biến trên lúa, gây ra bởi nấm.",
         "agent": "Tác nhân: Do nấm Rhizoctonia solani gây ra.",
@@ -345,7 +345,7 @@
   },
  "CitrusDisease": {
    "black_spot": {
-     "name": "Đốm đen trên cây cam",
+     "name": "Đốm đen trên cây Cam",
      "info": {
        "description": "Miêu tả: Đây là một bệnh phổ biến trên cây cam, do nấm Guignardia citricarpa gây ra. Các vết đốm đen thường xuất hiện trên lá, có thể phát triển thành các vết lớn với thời gian.\nTriệu chứng: Lá bị nhiễm bệnh có thể bị héo và rụng sớm, ảnh hưởng đến năng suất và chất lượng của quả.",
        "agent": "Nấm Guignardia citricarpa",
@@ -353,7 +353,7 @@
      }
    },
    "canker": {
-     "name": "Loét trên cây cam",
+     "name": "Loét trên cây Cam",
      "info": {
        "description": "Miêu tả: Bệnh loét trên cây cam là do vi khuẩn gây ra, chủ yếu là Xanthomonas axonopodis.\nTriệu chứng: Các loét thường xuất hiện trên vỏ thân, cành và quả cam, gây ra các vết thương và làm suy yếu cây.",
        "agent": "Vi khuẩn Xanthomonas axonopodis",
@@ -361,7 +361,7 @@
      }
    },
    "greening": {
-     "name": "Bệnh huỳnh quang trên cây cam",
+     "name": "Bệnh huỳnh quang trên Cây cam",
      "info": {
        "description": "Miêu tả: Bệnh huỳnh quang (citrus greening) là một trong những bệnh nghiêm trọng nhất trên cây cam, do vi khuẩn Candidatus Liberibacter spp. gây ra.\nTriệu chứng: Các triệu chứng chính là lá bị ố vàng mất màu, quả nhỏ, chát, và có thể có hình dạng bất thường.",
        "agent": "Vi khuẩn Candidatus Liberibacter spp.",
@@ -375,7 +375,7 @@
      }
    },
    "melanose": {
-     "name": "Bệnh nám trên cây cam",
+     "name": "Bệnh nám trên cây Cam",
      "info": {
        "description": "Miêu tả: Bệnh nám trên cây cam là do nấm Diaporthe citri gây ra. Các vết nám thường xuất hiện trên lá, cành và quả cam.\nTriệu chứng: Các vết nám có màu nâu sẫm, có thể làm héo và rụng lá, ảnh hưởng đến sự phát triển của cây và chất lượng quả.",
        "agent": "Nấm Diaporthe citri",
@@ -385,7 +385,7 @@
  },
   "MangoDisease": {
     "anthracnose": {
-      "name": "Bệnh đốm nâu trên cây xoài",
+      "name": "Bệnh đốm nâu trên cây Xoài",
       "info": {
         "description": "Miêu tả: Bệnh đốm nâu trên cây xoài do nấm Colletotrichum gloeosporioides gây ra, là một trong những bệnh phổ biến và gây thiệt hại nặng nề nhất.\nTriệu chứng: Các đốm nâu xuất hiện trên lá, cành và quả, có thể làm héo và rụng lá, gây suy yếu cây và giảm năng suất.",
         "agent": "Nấm Colletotrichum gloeosporioides",
@@ -393,7 +393,7 @@
       }
     },
     "back_die": {
-      "name": "Chết lưng cây xoài",
+      "name": "Chết lưng cây Xoài",
       "info": {
         "description": "Miêu tả: Bệnh chết lưng cây xoài là do nấm Lasiodiplodia theobromae gây ra, thường xuất hiện sau khi cây bị tổn thương hoặc vào mùa mưa.\nTriệu chứng: Các vết thương trên vỏ thân và cành cây có thể lan ra và gây ra tình trạng chết lưng, làm suy yếu cây và giảm năng suất.",
         "agent": "Nấm Lasiodiplodia theobromae",
@@ -401,15 +401,15 @@
       }
     },
     "bacterial_canker": {
-      "name": "Bệnh loét vi khuẩn trên cây xoài",
+      "name": "Bệnh loét vi khuẩn trên cây Xoài",
       "info": {
-        "description": "Miêu tả: Bệnh loét vi khuẩn trên cây xoài do vi khuẩn Xanthomonas campestris pv. mangiferae gây ra, thường xuất hiện trên các bộ phận cây bị tổn thương.\nTriệu chứng: Các loét trên vỏ thân, cành và quả cây xoài, gây ra các vết thương và làm suy yếu cây.",
+        "description": "Miêu tả: Bệnh loét vi khuẩn trên cây Xoài do vi khuẩn Xanthomonas campestris pv. mangiferae gây ra, thường xuất hiện trên các bộ phận cây bị tổn thương.\nTriệu chứng: Các loét trên vỏ thân, cành và quả cây xoài, gây ra các vết thương và làm suy yếu cây.",
         "agent": "Vi khuẩn Xanthomonas campestris pv. mangiferae",
         "symptom": "Loét trên vỏ thân, cành và quả cây, gây ra các vết thương."
       }
     },
     "cutting_weevil": {
-      "name": "Bọ cắn cây xoài",
+      "name": "Bọ cắn cây Xoài",
       "info": {
         "description": "Miêu tả: Bọ cắn cây xoài là loài côn trùng gây hại trên cây xoài, ăn lá và các bộ phận non của cây.\nTriệu chứng: Lỗ ăn trên lá và các bộ phận cây non, có thể gây ra thiệt hại nghiêm trọng đặc biệt vào giai đoạn non trưởng thành của cây.",
         "agent": "Loài côn trùng gây hại trên cây xoài",
@@ -417,7 +417,7 @@
       }
     },
     "gall_midge": {
-      "name": "Ruồi đục thân cây xoài",
+      "name": "Ruồi đục thân cây Xoài",
       "info": {
         "description": "Miêu tả: Ruồi đục thân cây xoài là loài côn trùng nhỏ gây hại, ăn lá và các bộ phận non của cây, gây ra sự hình thành của các nang trên cây.\nTriệu chứng: Các nang trên thân, cành và lá cây xoài, gây ra sự suy yếu của cây và giảm năng suất.",
         "agent": "Loài côn trùng gây hại trên cây xoài",
@@ -431,7 +431,7 @@
       }
     },
     "mildew_powdery": {
-      "name": "Bệnh phấn trắng trên cây xoài",
+      "name": "Bệnh phấn trắng trên cây Xoài",
       "info": {
         "description": "Miêu tả: Bệnh phấn trắng trên cây xoài do nấm gây ra, thường xuất hiện vào mùa mưa.\nTriệu chứng: Lớp phủ màu trắng như bụi phấn trên lá và các bộ phận cây khác, gây ra các vết thương và làm suy yếu cây.",
         "agent": "Nấm gây bệnh trên cây xoài",
@@ -439,7 +439,7 @@
       }
     },
     "mould_sooty": {
-      "name": "Bệnh mốc than trên cây xoài",
+      "name": "Bệnh mốc than trên cây Xoài",
       "info": {
         "description": "Miêu tả: Bệnh mốc than trên cây xoài là do nấm Capnodium mangiferae gây ra.\nTriệu chứng: Lớp phủ màu đen trên lá và các bộ phận cây khác, gây ra sự suy yếu của cây và giảm năng suất.",
         "agent": "Nấm Capnodium mangiferae",
