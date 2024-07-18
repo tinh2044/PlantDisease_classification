@@ -125,7 +125,7 @@ function App() {
 			let formData = new FormData();
 			formData.append("file", selectedFile);
 			console.log(selectedFile)
-			let res = await axios.post(`https://api-plantdisease-1.onrender.com/predict/?name=${plant}`, formData);
+			let res = await axios.post(`https://serverplantdisease.onrender.com/predict/?name=${plant}`, formData);
 			if (res.status === 200) {
 				setData(res.data)
 			}

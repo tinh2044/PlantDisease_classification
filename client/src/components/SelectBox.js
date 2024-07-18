@@ -6,14 +6,13 @@ function SelectBox({ plant, setPlant, classes }) {
     const [plantDiseases, setPlantDiseases] = useState([])
 
     const getDisease = async () => {
-        let res = await axios.get(`https://api-plantdisease-1.onrender.com/diseases`);
+        let res = await axios.get(`https://serverplantdisease.onrender.com/diseases`);
         setPlantDiseases(res.data)
 
     }
 
     useEffect(() => {
         getDisease()
-        console.log(plantDiseases)
     }, [])
     return (
         <Box style={{ minWidth: 120, maxWidth: 250, width: "100%" }} >
