@@ -1,0 +1,54 @@
+[
+  {
+    "key": "AppleDisease",
+    "name": "Táo"
+  },
+  {
+    "key": "BellPepperDisease",
+    "name": "Ớt chuông"
+  },
+  {
+    "key": "CherryDisease",
+    "name": "Cherry"
+  },
+  {
+    "key": "CitrusDisease",
+    "name": "Cam, Quýt"
+  },
+  {
+    "key": "CornDisease",
+    "name": "Bắp(Ngô)"
+  },
+  {
+    "key": "GrapeDisease",
+    "name": "Nho"
+  },
+  {
+    "key": "JackFruitDisease",
+    "name": "Mít"
+  },
+  {
+    "key": "MangoDisease",
+    "name": "Xoài"
+  },
+  {
+    "key": "PeachDisease",
+    "name": "Lê"
+  },
+  {
+    "key": "PotatoDisease",
+    "name": "Khoai tây"
+  },
+  {
+    "key": "RiceDisease",
+    "name": "Lúa"
+  },
+  {
+    "key": "StrawberryDisease",
+    "name": "Dâu tây"
+  },
+  {
+    "key": "TomatoDisease",
+    "name": "Cà chua"
+  }
+]
