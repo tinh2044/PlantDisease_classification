@@ -2,11 +2,11 @@ version: "3"
 
 services:
   web:
-    container_name: python-ai
+    container_name: server-plantdiseaes
     build:
       context: .
       dockerfile: Dockerfile
-    command: sh -c "uvicorn app.main:app --reload --port=$PORT --host=python-ai"
+    command: sh -c "uvicorn app.main:app --reload --port=$PORT --host=server-plantdiseaes"
     ports:
       - 8000:8000
     env_file:
