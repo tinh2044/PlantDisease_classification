@@ -50,5 +50,13 @@
   {
     "key": "TomatoDisease",
     "name": "Cà chua"
+  },
+  {
+    "key": "GuavaDisease",
+    "name": "Ổi"
+  },
+  {
+    "key": "CoconutDisease",
+    "name": "Đừa"
   }
 ]
