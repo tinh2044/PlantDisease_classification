@@ -58,5 +58,25 @@
   {
     "key": "CoconutDisease",
     "name": "Đừa"
+  },
+  {
+    "key": "CassavaDisease",
+    "name": "Sắn"
+  },
+  {
+    "key": "ChiliDisease",
+    "name": "Ớt"
+  },
+  {
+    "key": "CoffeeDisease",
+    "name": "Cà phê"
+  },
+  {
+    "key": "TeaDisease",
+    "name": "Chè"
+  },
+  {
+    "key": "WheatDisease",
+    "name": "Lúa Mì"
   }
 ]
