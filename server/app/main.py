@@ -20,7 +20,7 @@ model_paths = [f"{model_dir}/{x}" for x in model_names]
 DICT_MODEL = {k[:k.index("_")]: tf.lite.Interpreter(model_path=v)
               for k, v in zip(model_names, model_paths)}
 
-with open(f'{BASE_DIR}/class_names.json', 'r', encoding="utf-8") as f:
+with open(f'{BASE_DIR}/info_disease.json', 'r', encoding="utf-8") as f:
     DICT_CLASS_NAMES = json.load(f)
 
 app = FastAPI()
@@ -39,6 +39,7 @@ app.add_middleware(
 async def get_diseases():
     with open(f"{BASE_DIR}/diseases.json", 'r', encoding="utf-8") as f:
         list_diseases = json.load(f)
+        list_diseases.sort(key=lambda x: x['key'])
     return list_diseases
 
 
