@@ -194,6 +194,7 @@ function App() {
 							/>
 
 						</CardContent>}
+
 						{data && <CardContent className={classes.detail}>
 							<Typography style={{ marginTop: "-12px" }} variant="h6" component="div">Kết quả: {data.name}</Typography>
 							<Typography variant="h6" component="div">Độ chính xác: {data.confidence}%</Typography>
