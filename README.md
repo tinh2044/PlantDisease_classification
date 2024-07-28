@@ -1,5 +1,5 @@
 <h1 align="center">Plant Disease Classification<h1>
-<img src="./Images//bg.png" />
+" />
 
 ## Introduction
 
@@ -7,30 +7,32 @@ In the context of increasingly modernized agriculture, the application of techno
 
 ## Dataset
 
-| Name        |                   Disease                   |
-| ----------- | :-----------------------------------------: |
-| Apple       |   <img src="./Images/AppleDisease.png"/>    |
-| Bell pepper | <img src="./Images/BellPepperDisease.png"/> |
-| Cassava     |  <img src="./Images/CassavaDisease.png"/>   |
-| Cherry      |   <img src="./Images/CherryDisease.png"/>   |
-| Clili       |   <img src="./Images/ChiliDisease.png"/>    |
-| Citrus      |   <img src="./Images/CitrusDisease.png"/>   |
-| Coconut     |  <img src="./Images/CoconutDisease.png"/>   |
-| Coffee      |   <img src="./Images/CoffeeDisease.png"/>   |
-| Corn        |    <img src="./Images/CornDisease.png"/>    |
-| Grape       |   <img src="./Images/GrapeDisease.png"/>    |
-| Guava       |   <img src="./Images/GuavaDisease.png"/>    |
-| Jack fruit  |    <img src="./Images/JackDisease.png"/>    |
-| Mango       |   <img src="./Images/MangoDisease.png"/>    |
-| Peach       |   <img src="./Images/PeachDisease.png"/>    |
-| Potato      |   <img src="./Images/PotatoDisease.png"/>   |
-| Rice        |    <img src="./Images/RiceDisease.png"/>    |
-| Soybean     |  <img src="./Images/SoybeanDisease.png"/>   |
-| Strawberry  | <img src="./Images/StrawberryDisease.png"/> |
-| Sugarcane   | <img src="./Images/SugarcaneDisease.png"/>  |
-| Tea         |    <img src="./Images/TeaDisease.png"/>     |
-| Tomato      |   <img src="./Images/TomatoDisease.png"/>   |
-| Wheat       |   <img src="./Images/WheatDisease.png"/>    |
+|    Name     |                                                      Disease                                                      |
+| :---------: | :---------------------------------------------------------------------------------------------------------------: |
+|    Apple    |                            alternaria leaf_spot, brown spot, gray spot, healthy leaf,                             |
+| Bell pepper |                                              bacterial spot, healthy                                              |
+|   Cassava   |                           bacterial blight, brown streak, green mottle, healthy mosaic                            |
+|   Cherry    |                                              healthy, powdery mildew                                              |
+|    Clili    |                                healthy, leaf curl, leaf spot, whitefly, yellowish                                 |
+|   Citrus    |                                  black spot, canker, greening, heathy, melanose                                   |
+|   Coconut   |                         caterpillars, drying of eaflets, flaccidity, leaflets, yellowing                          |
+|   Coffee    |                                          healthy, red spider mite, rust                                           |
+|    Corn     |                                       common rust, gray leaf spot, healthy                                        |
+|    Grape    |                                         black rot, blight, esca, healthy                                          |
+|    Guava    |                                     canker, dot, healthy, mummification, rust                                     |
+| Jack fruit  |                                          algal spot, black spot, healthy                                          |
+|    Mango    |                                     anthracnose, back die, bacterial canker,                                      |
+|             |                          cutting weevil, gall midge, healthy, mildew powder mould sooty,                          |
+|    Peach    |                                             bacterial spot, healthy,                                              |
+|   Potato    |                                        early blight, healthy, late blight                                         |
+|    Rice     |                           blast, blight, brown spot, healthy, narrow brown spot, scald                            |
+|   Soybean   |                                bacterial blight, caterpillar, diabrotica speciosa,                                |
+|             |                    downy mildew, healthy, mosaic virus, powdery mildew, rust, southern blight                     |
+| Strawberry  |                                               healthy, leaf scorch                                                |
+|  Sugarcane  |                                        healthy, red rot, red stripe, rust,                                        |
+|     Tea     |                                  bird eye spot, brown blight, healthy, leaf spot                                  |
+|   Tomato    | bacterial spot, curl virus, early blight, healthy, late blight, leaf mold, mosaic virus, septoria leaf spot, spot |
+|    Wheat    |                                         brown rust, healthy, yellow rust                                          |
 
 ## Set-up Training
 
