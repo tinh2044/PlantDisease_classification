@@ -15,13 +15,14 @@ function SelectBox({ plant, setPlant, classes }) {
         getDisease()
     }, [])
     return (
-        <Box style={{ minWidth: 120, maxWidth: 250, width: "100%" }} >
+        <Box style={{ minWidth: 120, maxWidth: 250, width: "100%", maxHeight: "200px" }} >
             <FormControl fullWidth>
                 <InputLabel id="demo-simple-select-label" className={classes.label}>Cây trồng</InputLabel>
                 <Select
                     labelId="demo-simple-select-label"
                     id="demo-simple-select"
                     value={plant}
+                    sx={{maxHeight:"50px"}}
                     label={"Cây trồng"}
                     onChange={(e) => setPlant(e.target.value)}
 
