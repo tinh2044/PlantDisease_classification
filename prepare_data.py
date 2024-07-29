@@ -2,7 +2,6 @@ import os
 import shutil
 from tqdm import tqdm
 import cv2 as cv
-import glob
 
 
 def merge_dir(dir_1: str, dir_2: str) -> None:

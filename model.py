@@ -12,7 +12,7 @@ def get_model(input_shape, num_cls, name):
     - num_cls: Integer, number of classes for classification.
 
     Returns:
-    - model: Keras Model, the model for Potato Disease classification.
+    - model: Keras Models, the model for Potato Disease classification.
     """
     backbone = EfficientNetB0(input_shape=input_shape,
                               include_top=False,

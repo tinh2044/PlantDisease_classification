@@ -1,0 +1,10 @@
+uvicorn>=0.27.1
+numpy>=1.26.4
+tensorflow>=2.17.0
+fastapi>=0.110.0
+pillow>=10.2.0
+pathlib>=1.0.1
+matplotlib>=3.7.2
+keras>=3.3.3
+opencv-python>=4.9.0.80
+tqdm>=4.66.4

@@ -10,7 +10,6 @@ This project leverages the power of EfficientNet model to help farmers and garde
 1. Training Pipeline
 2. Build simple server
 3. Build client
-4. Deployment
 
 ## Dataset
 
@@ -19,30 +18,30 @@ Data is collected from various sources on kaggle and aggregated together. The da
 **Data Description**
 
 
-|    Name    | Disease                                                                                                                        |
-| :---------: | :----------------------------------------------------------------------------------------------------------------------------- |
-|    Apple    | alternate leaf spot, brown spot, gray spot, healthy leaf,                                                                      |
-| Bell pepper | bacterial spot, healthy                                                                                                        |
-|   Cassava   | bacterial blight, brown streak, green mottle, healthy mosaic                                                                   |
-|   Cherry   | healthy, powdery mildew                                                                                                        |
-|    Chili    | healthy, leaf curl, leaf spot, whitefly, yellowish                                                                             |
-|   Citrus   | black spot, canker, greening, healthy, melanoma                                                                                |
-|   Coconut   | caterpillars, drying of leaflets, flaccidity, leaflets, yellowing                                                              |
-|   Coffee   | healthy, red spider mite, rust                                                                                                 |
-|    Corn    | common rust, gray leaf spot, healthy                                                                                           |
-|    Grape    | black rot, blight, esca, healthy                                                                                               |
-|    Guava    | canker, dot, healthy, mummification, rust                                                                                      |
-| Jack fruit | algal spot, black spot, healthy                                                                                                |
-|    Mango    | anthracnose, back die, bacterial canker, cutting weevil, gall midge, healthy, mildew powder mould sooty,                       |
-|    Peach    | bacterial spot, healthy,                                                                                                       |
-|   Potato   | early blight, healthy, late blight                                                                                             |
-|    Rice    | blast, blight, brown spot, healthy, narrow brown spot, scald                                                                   |
-|   Soybean   | bacterial blight, caterpillar, diabrotica speciosa, downy mildew, healthy, mosaic virus, powdery mildew, rust, southern blight |
-| Strawberry | healthy, leaf scorch                                                                                                           |
-|  Sugarcane  | healthy, red rot, red stripe, rust,                                                                                            |
-|     Tea     | bird eye spot, brown blight, healthy, leaf spot                                                                                |
-|   Tomato   | bacterial spot, curl virus, early blight, healthy, late blight, leaf mold, mosaic virus, septoria leaf spot, spot              |
-|    Wheat    | brown rust, healthy, yellow rust                                                                                               |
+| Name           | Disease                                                                                                                        |
+|:--------------:| :----------------------------------------------------------------------------------------------------------------------------- |
+|     Apple      | alternate leaf spot, brown spot, gray spot, healthy leaf,                                                                      |
+|  Bell pepper   | bacterial spot, healthy                                                                                                        |
+|    Cassava     | bacterial blight, brown streak, green mottle, healthy mosaic                                                                   |
+|     Cherry     | healthy, powdery mildew                                                                                                        |
+|     Chili      | healthy, leaf curl, leaf spot, whitefly, yellowish                                                                             |
+|     Citrus     | black spot, canker, greening, healthy, melanoma                                                                                |
+|    Coconut     | caterpillars, drying of leaflets, flaccidity, leaflets, yellowing                                                              |
+|     Coffee     | healthy, red spider mite, rust                                                                                                 |
+|      Corn      | common rust, gray leaf spot, healthy                                                                                           |
+|     Grape      | black rot, blight, esca, healthy                                                                                               |
+|     Guava      | canker, dot, healthy, mummification, rust                                                                                      |
+|   Jack fruit   | algal spot, black spot, healthy                                                                                                |
+|     Mango      | anthracnose, back die, bacterial canker, cutting weevil, gall midge, healthy, mildew powder mould sooty,                       |
+|     Peach      | bacterial spot, healthy,                                                                                                       |
+|     Potato     | early blight, healthy, late blight                                                                                             |
+|      Rice      | blast, blight, brown spot, healthy, narrow brown spot, scald                                                                   |
+|    Soybean     | bacterial blight, caterpillar, diabrotica speciosa, downy mildew, healthy, mosaic virus, powdery mildew, rust, southern blight |
+|   Strawberry   | healthy, leaf scorch                                                                                                           |
+|   Sugarcane    | healthy, red rot, red stripe, rust,                                                                                            |
+|      Tea       | bird eye spot, brown blight, healthy, leaf spot                                                                                |
+|     Tomato     | bacterial spot, curl virus, early blight, healthy, late blight, leaf mold, mosaic virus, septoria leaf spot, spot              |
+|     Wheat      | brown rust, healthy, yellow rust                                                                                               |
 
 ## Set-up
 
@@ -53,7 +52,7 @@ $ git clone git@github.com:tinh2044/PlantDisease_classification.git
 $ cd PlantDisease_classification
 ```
 
-- Create virtual environments with [conda](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#activating-an-environment) to avoid conflicts
+- Create virtual environments with [conda](https://conda.io/projects/conda/en/latest/index.html) to avoid conflicts
 
 ```Terminal
 $ conda create --name plantDisease
@@ -106,9 +105,41 @@ $ python evaluate.py --root_dir ./Datasets --h5_dir ./Models
 - Convert model to tflite 
 ```Terminal
 $ python covert_tflite.py
-``
-
-
+```
 ## Server
+Make sure you have to copy all tflite model in ``ModelLight`` to ``server/ModelLight``
 
+Move to server directory 
+
+```Terminal
+$ cd server
+```
+- Run server by command
+
+```Terminal
+$ uvicorn app.main:app --host 127.0.0.1 --port 5000
+```
+
+- Or using docker 
+```Terminal
+$ docker compose up
+```
 ## Client
+Move to client directory
+```Terminal
+$ cd client
+```
+Run client by command
+```Terminal
+$ npm start
+```
+**Note**: You need to create `.env` file in client folder and type
+```javascript
+REACT_APP_API_URL=your_server_api
+```
+
+## References
+- [New Plant Diseases Dataset](https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset)
+- [Plant Disease Classification Merged Dataset](https://www.kaggle.com/datasets/alinedobrovsky/plant-disease-classification-merged-dataset)
+- [EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks](https://arxiv.org/abs/1905.11946)
+- [Transfer learning and fine-tuning](https://www.tensorflow.org/tutorials/images/transfer_learning)

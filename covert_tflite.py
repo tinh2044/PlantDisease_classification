@@ -1,16 +1,16 @@
 import tensorflow as tf
 import os
-import keras
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve(strict=True).parent
 model_light_dir = f"{BASE_DIR}/ModelLight"
 
-
 if not os.path.exists(model_light_dir):
     os.mkdir(model_light_dir)
 
 model_dir = f"{BASE_DIR}/SavedModel"
+if not os.path.exists(model_dir):
+    raise FileNotFoundError(f"{model_dir} not found")
 model_names = os.listdir(model_dir)
 model_paths = [f"{model_dir}/{x}" for x in model_names]
 
