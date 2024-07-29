@@ -113,7 +113,7 @@ function App() {
 			let formData = new FormData();
 			formData.append("file", selectedFile);
 			console.log(selectedFile)
-			let res = await axios.post(`${process.env.API}/predict/?name=${plant}`, formData);
+			let res = await axios.post(`${process.env.REACT_APP_API_URL}/predict/?name=${plant}`, formData);
 			if (res.status === 200) {
 				setData(res.data)
 			}
@@ -168,7 +168,7 @@ function App() {
 					<Card className={`${classes.imageCard} ${!image ? classes.imageCardEmpty : ''}`}>
 						{image && <CardActionArea>
 							<CardMedia
-								style={{height: 250, width: 300, objectFit: "cover"}}
+								style={{ height: 250, width: 300, objectFit: "cover" }}
 								image={preview}
 								component="image"
 								title="Contemplative Reptile"
@@ -189,7 +189,7 @@ function App() {
 
 						</CardContent>}
 						{isLoading && <CardContent className={classes.detail} style={{ flexDirection: "row" }}>
-							<CircularProgress color="secondary" style={{color: '#3f51b5 !important'}} />
+							<CircularProgress color="secondary" style={{ color: '#3f51b5 !important' }} />
 							<Typography className={classes.title} variant="h6" noWrap>
 								Đang xữ lý
 							</Typography>
