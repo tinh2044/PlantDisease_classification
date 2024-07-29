@@ -4,7 +4,6 @@ import axios from "axios";
 
 function SelectBox({ plant, setPlant, classes }) {
     const [plantDiseases, setPlantDiseases] = useState([])
-        console.log(process.env.REACT_APP_API_URL)
 
     const getDisease = async () => {
         let res = await axios.get(`${process.env.REACT_APP_API_URL}/diseases`);
@@ -23,7 +22,7 @@ function SelectBox({ plant, setPlant, classes }) {
                     labelId="demo-simple-select-label"
                     id="demo-simple-select"
                     value={plant}
-                    sx={{maxHeight:"50px"}}
+                    sx={{ maxHeight: "50px" }}
                     label={"Cây trồng"}
                     onChange={(e) => setPlant(e.target.value)}
 
