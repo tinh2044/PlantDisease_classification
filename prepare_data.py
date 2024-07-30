@@ -143,7 +143,7 @@ def process_multi_dataset(root_dir, train_ratio, val_ratio):
 
 if __name__ == "__main__":
     # process_multi_dataset("./Datasets", 0.7, 0.1)
-    data_dir = "./Datasets/Wheat"
+    data_dir = "./Datasets/"
 
     # splitting_data(data_dir, 0.7, 0.1)
-    covert_image(data_dir)
+

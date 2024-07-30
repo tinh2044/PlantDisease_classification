@@ -3,12 +3,12 @@ import os
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve(strict=True).parent
-model_light_dir = f"{BASE_DIR}/ModelLight"
+model_light_dir = f"{BASE_DIR}/ModelLights"
 
 if not os.path.exists(model_light_dir):
     os.mkdir(model_light_dir)
 
-model_dir = f"{BASE_DIR}/SavedModel"
+model_dir = f"{BASE_DIR}/SavedModels"
 if not os.path.exists(model_dir):
     raise FileNotFoundError(f"{model_dir} not found")
 model_names = os.listdir(model_dir)

@@ -15,7 +15,7 @@ def get_dataset(root_dir, img_size, batch_size):
     - batch_size: The batch size for the datasets.
 
     Returns:
-    A tuple containing the training dataset, validation dataset, and testing dataset.
+    A tuple containing the training dataset, validation dataset, and class names.
     """
     train_dataset = image_dataset_from_directory(directory=f"{root_dir}/train",
                                                  shuffle=True,
@@ -26,6 +26,7 @@ def get_dataset(root_dir, img_size, batch_size):
                                                shuffle=True,
                                                image_size=img_size,
                                                batch_size=batch_size, label_mode="categorical")
+    class_names = train_dataset.class_names
     augmentation = get_augmentation()
 
     train_dataset = train_dataset.map(lambda x, y: (augmentation(x, training=True), y))
@@ -33,7 +34,7 @@ def get_dataset(root_dir, img_size, batch_size):
     train_ds = train_dataset.cache().shuffle(len(train_dataset))
     val_dataset = val_dataset.cache().shuffle(len(train_ds))
 
-    return train_dataset, val_dataset
+    return train_dataset, val_dataset,class_names
 
 
 def train_single(model, train_ds, val_ds, epoch, export_dir=None, h5_dir=None):
@@ -87,11 +88,9 @@ def train_disease_classification(root_dir, img_size, batch_size, epoch, export_d
         model_name = f"{name}_classification"
         data_root = f"{root_dir}/{name}"
         print(f"Get train, val, test ds in {data_root}")
-        train_ds, val_ds = get_dataset(f"{root_dir}/{name}", (img_size, img_size), batch_size)
-
-        class_names = train_ds.class_names
+        train_ds, val_ds, class_names = get_dataset(f"{root_dir}/{name}", (img_size, img_size), batch_size)
         
-        print(f"Get model for {name} ds")
+        print(f"Get model for {name} dataset")
         model = get_model((img_size, img_size, 3), len(class_names), model_name)
 
         model.compile(

@@ -13,7 +13,7 @@ This project leverages the power of EfficientNet model to help farmers and garde
 
 ## Dataset
 
-Data is collected from various sources on kaggle and aggregated together. The dataset has 20 plants with corresponding diseases splitting into train, val, and test.
+Data is collected from various sources on kaggle and aggregated together. The dataset has 22 plants with corresponding diseases splitting into train, val, and test.
 
 **Data Description**
 

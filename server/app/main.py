@@ -58,7 +58,6 @@ async def predict(
     class_names = list(disease_info.keys())
 
     img_arr = read_file_as_image(await file.read())
-
     model.set_tensor(input_details[0]['index'], [img_arr])
 
     model.invoke()

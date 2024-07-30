@@ -112,10 +112,11 @@ function App() {
 			setIsloading(true);
 			let formData = new FormData();
 			formData.append("file", selectedFile);
-			console.log(selectedFile)
 			let res = await axios.post(`${process.env.REACT_APP_API_URL}/predict/?name=${plant}`, formData);
 			if (res.status === 200) {
 				setData(res.data)
+			} else {
+				setData(null)
 			}
 			setIsloading(false);
 		}
@@ -184,8 +185,8 @@ function App() {
 						</CardContent>}
 
 						{data && <CardContent className={classes.detail}>
-							<Typography style={{ marginTop: "-12px" }} variant="h6" component="div">Kết quả: {data.name}</Typography>
-							<Typography variant="h6" component="div">Độ chính xác: {data.confidence}%</Typography>
+							<Typography style={{ marginTop: "-12px" }} variant="h6" component="div">Kết quả: {data.name}({data.confidence}%)</Typography>
+							<Typography variant="h6" component="div">Độ chính xác: </Typography>
 
 						</CardContent>}
 						{isLoading && <CardContent className={classes.detail} style={{ flexDirection: "row" }}>
