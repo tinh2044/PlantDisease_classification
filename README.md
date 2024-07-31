@@ -8,12 +8,12 @@ This project leverages the power of EfficientNet model to help farmers and garde
 ## Project Overview
 
 1. Training Pipeline
-2. Build simple server
+2. Build a simple server
 3. Build client
 
 ## Dataset
 
-Data is collected from various sources on kaggle and aggregated together. The dataset has 22 plants with corresponding diseases splitting into train, val, and test.
+Data is collected from various sources on Kaggle and aggregated together. The dataset has 22 plants with corresponding diseases splitting into train, val, and test.
 
 **Data Description**
 
@@ -55,19 +55,24 @@ $ cd PlantDisease_classification
 - Create virtual environments with [conda](https://conda.io/projects/conda/en/latest/index.html) to avoid conflicts
 
 ```Terminal
-$ conda create --name plantDisease
-$ conda activate plantDisease
+conda create --name plantDisease
+conda activate plantDisease
 ```
 
 - Install requirements.
 
 ```Terminal
-$ pip install -r ./requirements.txt
+pip install -r ./requirements.txt
 ```
 
 ## Training
 
-Download dataset from kaggle [link](https://www.kaggle.com/datasets/nguyenchitinh/plantdisease-with-20-plant) and extract its to Datasets folder
+Download dataset from kaggle [link](https://www.kaggle.com/datasets/nguyenchitinh/plantdisease-with-20-plant) and extract its to `Datasets` folder
+
+Or download datasets using Kaggle CLI
+```
+kaggle datasets download -d nguyenchitinh/plantdisease-with-20-plant
+```
 
 Make sure after extracted, your `Datasets` folder has struct like this
 ```
@@ -94,17 +99,17 @@ Make sure after extracted, your `Datasets` folder has struct like this
 - To train the models run
 
 ```Terminal
-$ python train_multiple_model.py --epoch 100 --batch_size 32 --root_dir ./Datasets --size 224 --export_dir ./SavedModels --h5_dir ./Models
+python train_multiple_model.py --epoch 100 --batch_size 32 --root_dir ./Datasets --img_size 224 --export_dir ./SavedModels --h5_dir ./Models
 ```
 After training is complete. Weights of model is saved to ```./Model``` and  SavedModel is saved to ```./SavedModels```
 - Evaluate the model
 ```Terminal
-$ python evaluate.py --root_dir ./Datasets --h5_dir ./Models
+python evaluate.py --root_dir ./Datasets --h5_dir ./Models
 ```
 
 - Convert model to tflite 
 ```Terminal
-$ python covert_tflite.py
+python covert_tflite.py
 ```
 ## Server
 Make sure you have to copy all tflite model in ``ModelLight`` to ``server/ModelLight``
@@ -112,26 +117,26 @@ Make sure you have to copy all tflite model in ``ModelLight`` to ``server/ModelL
 Move to server directory 
 
 ```Terminal
-$ cd server
+cd server
 ```
 - Run server by command
 
 ```Terminal
-$ uvicorn app.main:app --host 127.0.0.1 --port 5000
+uvicorn app.main:app --host 127.0.0.1 --port 5000
 ```
 
 - Or using docker 
 ```Terminal
-$ docker compose up
+docker compose up
 ```
 ## Client
 Move to client directory
 ```Terminal
-$ cd client
+cd client
 ```
 Run client by command
 ```Terminal
-$ npm start
+npm start
 ```
 **Note**: You need to create `.env` file in client folder and type
 ```javascript
